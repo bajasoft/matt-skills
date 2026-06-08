@@ -1,0 +1,10 @@
+[tools]
+python = "3.12"
+
+[tasks.update-codex-plugin]
+description = "Refresh the local matt-skills Codex plugin from this repo"
+run = "python scripts/update-codex-plugin.py"
+
+[tasks.reinstall-codex-plugin]
+description = "Refresh and reinstall the local matt-skills Codex plugin"
+run = "python scripts/update-codex-plugin.py --reinstall"
